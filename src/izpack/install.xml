@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installation version="1.0">
+    <info>
+        <appname>LessCssConverter</appname>
+        <appversion>1.0</appversion>
+        <appsubpath>LessCssConverter</appsubpath>
+        <javaversion>1.6</javaversion>
+    </info>
+
+    <locale>
+        <langpack iso3="eng"/>
+    </locale>
+
+    <guiprefs width="800" height="600" resizable="no">
+        <!--<splash>images/peas_load.gif</splash>-->
+        <!--
+        <laf name="substance">
+            <os family="windows" />
+            <os family="unix" />
+            <param name="variant" value="mist-silver" />
+        </laf>
+        <laf name="substance">
+            <os family="mac" />
+            <param name="variant" value="mist-aqua" />
+        </laf>
+        -->
+        <modifier key="useHeadingPanel" value="yes" />
+    </guiprefs>
+
+    <panels>
+        <panel classname="TargetPanel"/>
+        <panel classname="PacksPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+
+    <packs>
+        <pack name="Main" required="yes" installGroups="Tools">
+            <description>The core files needed for the application</description>
+            <fileset dir="lib" targetdir="${INSTALL_PATH}" override="true"/>
+            <singlefile src="../LessCSSConverter.jar" target="${INSTALL_PATH}/LessCssConverter.jar" />
+        </pack>
+    </packs>
+
+</installation>
