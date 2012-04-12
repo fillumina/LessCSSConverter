@@ -11,6 +11,19 @@
     <name>LessCSSConverter</name>
     <url>http://maven.apache.org</url>
 
+    <description>
+        This is a simple Java desktop application that use the LessCSSLib to convert
+        a LessCSS file into a standard CSS file.
+    </description>
+
+    <contributors>
+        <contributor>
+            <name>Francesco Illuminati</name>
+            <email>fillumina@gmail.com</email>
+            <url>http://fillumina.wordpress.com</url>
+        </contributor>
+    </contributors>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <staging.dir>${project.build.directory}/staging</staging.dir>
